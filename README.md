@@ -1,6 +1,7 @@
 
 # PDPbox
 [![PyPI version](https://badge.fury.io/py/PDPbox.svg)](https://badge.fury.io/py/PDPbox)
+[![Build Status](https://travis-ci.com/SauceCat/PDPbox.svg?branch=master)](https://travis-ci.com/SauceCat/PDPbox)
 
 python partial dependence plot toolbox
 
@@ -37,12 +38,17 @@ between predictors and model prediction.
 
 - Latest version: http://pdpbox.readthedocs.io/en/latest/
 - Historical versions:
-  - [v0.1](https://github.com/SauceCat/PDPbox/blob/master/docs_history/v0.1/docs.md)
+  - [v0.1.0](https://github.com/SauceCat/PDPbox/blob/master/docs_history/v0.1/docs.md)
+  
+## Tutorials
+https://github.com/SauceCat/PDPbox/tree/master/tutorials
 
+## Change Logs
+https://github.com/SauceCat/PDPbox/blob/master/CHANGELOG.md
 
 ## Installation
 
-- through pip (stable version)
+- through pip (latest stable version： 0.2.0)
   ```
   $ pip install pdpbox
   ```
@@ -53,6 +59,23 @@ between predictors and model prediction.
   $ cd PDPbox
   $ python setup.py install
   ```
+
+## Testing
+
+PDPbox can be tested using `tox`.
+
+- First install `tox` and `tox-venv`
+
+  ```
+  $ pip install tox tox-venv
+  ```
+  
+- Call `tox` inside the pdpbox clone directory. This will run tests with python 2.7 and 3.6 (if available).
+
+- To test the documentation, call `tox -e docs`. 
+  The documentation should open up in your browser if it is successfully build.
+  Otherwise, the problem with the documentation will be reported in the output of the command.
+
 
 ## Gallery
 - **PDP:** PDP for a single feature
